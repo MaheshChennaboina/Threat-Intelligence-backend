@@ -4,6 +4,7 @@ publish = "backend"  # Adjust this path based on where your build artifacts are 
 
 [functions]
 directory = "functions"  # Adjust this path if your Netlify functions are stored in a different directory
+node_bundler = "esbuild"
 
 [[redirects]]
 from = "/*"
