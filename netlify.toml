@@ -1,12 +1,11 @@
 [build]
-command = "npm run build"
-publish = "backend"  # Adjust this path based on where your build artifacts are generated
+  command = "npm run build"
+  publish = "backend"  # Ensure this points to where your build artifacts are located
 
 [functions]
-directory = "functions"  # Adjust this path if your Netlify functions are stored in a different directory
-node_bundler = "esbuild"
+  directory = "backend/functions"  # Ensure this points to where your functions are located
 
 [[redirects]]
-from = "/*"
-to = "/index.html"
-status = 200
+  from = "/*"
+  to = "/index.html"
+  status = 200
